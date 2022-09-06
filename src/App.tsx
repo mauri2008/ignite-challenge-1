@@ -107,7 +107,7 @@ function App() {
                     <Empty/>
                     :
                     dataTasks.map(task =>(
-                      <Task task={task} onCheck={handleCheck} onDelete={handleDelete} />
+                      <Task key={task.id} task={task} onCheck={handleCheck} onDelete={handleDelete} />
                     ))
               }
 
